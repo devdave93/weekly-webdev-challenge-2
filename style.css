@@ -4,7 +4,7 @@
 
 .header {
 	height: 100vh;
-	background-image: url(../img/background.png);
+	background-image: url(img/background.png);
 	background-size: cover;
 	background-position: center;
 }
@@ -249,7 +249,7 @@ section.subscribe{
 }
 
 .contact{
-	background: url(../img/contact-background.png);
+	background: url(img/contact-background.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -337,7 +337,7 @@ textarea{
 @media all and (max-width: 768px) {
 
 	.header {
-		background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/background.png);	
+		background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(img/background.png);	
 	}
 	
 	.info-header{
@@ -366,7 +366,7 @@ textarea{
 	
 	.header {
 		height: 100vh;
-		background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/background.png);
+		background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(img/background.png);
 		background-size: cover;
 		background-position: center;
 	}
