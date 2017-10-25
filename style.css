@@ -38,8 +38,8 @@
 	justify-content: center;
 }
 
-.gallery, .our-services, .blog .container-fluid{
-	padding: 60px;
+.gallery, .our-services, .blog, .contact .container-fluid{
+	padding: 50px;
 }
 
 .gallery .col-8{
@@ -166,7 +166,6 @@ textarea{
 	white-space: normal;
 	width:  80%;
 	display: flex;
-	height: 100px;
 	padding: 0;
 	border: none;
 	border-radius: 0;
@@ -235,7 +234,9 @@ textarea{
 }
 
 /*-----END-OF-BUTTONS-STYLING-----*/
-	
+	.gallery img{
+		padding: 5px;
+	}
 
 /*-----TEXT-STYLING-----*/
 
