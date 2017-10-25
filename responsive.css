@@ -36,7 +36,7 @@
 
 	
 	#header {
-		background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/background.png);	
+		background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(img/background.png);	
 	}
 
 	.info-wrapper{
@@ -52,6 +52,7 @@
 
 	.our-services .btn{
 		width:  80%;
+
 	}
 
 	.our-services-wrapper h3{
@@ -71,18 +72,15 @@
 	padding: 0;
 	}
 
-	
-
 	.gallery .container-fluid div.row:last-child{
-	padding-top: 0;
-}
-.gallery img{
-		padding: 5px;
+		padding-top: 0;
 	}
-	
+
 	.gallery img{
+		padding: 5px;
 		width: 100%;
 	}
+	
 		
 }
 
@@ -90,7 +88,7 @@
 	
 	#header {
 		height: 100vh;
-		background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/background.png);
+		background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(img/background.png);
 		background-size: cover;
 		background-position: center;
 	}
@@ -107,8 +105,29 @@
 		font-size: 60px;
 	}
 
+	.about-us h1 {
+    	font-size: 60px;
+	}
+
+	.about-us small {
+    	font-size: 14px;
+	}
+
+	.gallery h1 {
+    	font-size: 60px;
+	}
+
+	.gallery small {
+    	font-size: 14px;
+	}
+
+	.txt-btn {
+	    font-size: 15px;
+	}
+
 	.our-services .btn{
 		width:  100%;
+
 	}
 
 	.our-services-wrapper h3{
@@ -127,5 +146,40 @@
 		width: 100%;
 	}
 
+	.btn{
+		margin: 10px;
+	}
+
+	.subscribe .row{
+		text-align: center;
+	}
+
+	.btn-label{
+		height: 80px;
+	}
+
+	.blog h1 {
+    	font-size: 60px;  
+	}
+
+	.blog small {
+    	font-size: 14px;  
+	}
+
+	.subscribe small {
+	    font-size: 14px;
+	}
+
+	.contact h1 {
+	    font-size: 60px;  
+	}
+	
+	.contact small {
+	    font-size: 14px;  
+	}
+
+	.gallery, .our-services, .blog, .contact .container-fluid{
+	padding-top: 20px;
+}
 
 }
