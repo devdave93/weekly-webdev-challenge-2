@@ -2,26 +2,28 @@
 	font-family: 'Raleway', sans-serif;
 }
 
-.header {
+/*-----HOME-PAGE-BACKGROUND-----*/
+#header {
 	height: 100vh;
 	background-image: url(img/background.png);
 	background-size: cover;
 	background-position: center;
 }
+/*-----HOME-PAGE-BACKGROUND-----*/
 
+/*-----NAVIGATION-----*/
 .navbar{
 	padding-left: 45px;
 	padding-right: 45px;
+	background-color: #ffffff;
 }
+/*-----NAVIGATION-----*/
 
-.info-header{
+
+/*-----WRAPPER-STYLING-----*/
+.info-wrapper{
 	margin-top: 200px;
 	margin-left: 15px;
-}
-
-.info-header h1{
-	font-weight: 700;
-	font-size: 60px;
 }
 
 .about-us-wrapper{
@@ -30,45 +32,86 @@
 	align-self: center;
 }
 
-.about-us-wrapper h1{
-	font-size: 70px;
-	font-weight: 700;
-	color: #fff;
+.row{
+	padding: 0;
+	margin: 0;
+	justify-content: center;
 }
 
-.about-us-wrapper small{
+.gallery, .our-services, .blog .container-fluid{
+	padding: 60px;
+}
+
+.gallery .col-8{
+	margin-bottom: 50px;
+}
+
+
+
+.subscribe-row{
+	padding: 100px;
+}
+
+/*-----FOOTER-STYLING----*/
+
+footer{
+	background-color: #262626;
+	color: #b9b9b9;
 	font-size: 16px;
-	color: #ffffff;
+}
+footer span{
+	color: red;
 }
 
-.info-header p{
-	text-shadow: 0px 0px 1px #ffffff;
+footer p{
+	margin: 0;
+	padding: 0;
+	line-height: 27px;
 }
 
-.our-services .btn{
-	width:  100%;
-}
-
-.our-services-wrapper{
-	align-self:  center;
-
-}
-.our-services-wrapper h1{
-	font-size: 60px;
-	font-weight: 700;
-	position: absolute;
-	color: #fff;
+footer p{
 	white-space: nowrap;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-shadow: 1px 2px 5px #000000;
+}
+/*-----FOTER-STYLING----*/
+
+
+
+/*-----FORM-STYLING----*/
+.contact .form-control{
+	margin: 10px;
+	border-radius: 0;
+	background-color:  rgba(0, 196, 196, 0.3);
+	font-size: 17px;
 }
 
-.our-services .btn{
-	margin-left: auto;
-	margin-right: auto;
+.form-control::placeholder {
+  color: white;
+  opacity: 1;
 }
+
+textarea{
+	background-color: grey;
+}
+
+.subscribe input{
+	border-radius: 0;
+	border: 1px solid #262626;
+}
+/*-----FORM-STYLING----*/
+
+
+
+/*-----MOUSE-ICON-----*/
+.mouse-icon{
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+}
+/*-----MOUSE-ICON-----*/
+
+
+
+/*-----SECTIONS-BACKGROUND-----*/
 
 .about-us{
 	background-color:  #00c4c4;
@@ -78,13 +121,35 @@
 	background-color:  #70bfff;;
 }
 
-.info-header p{
-	font-size: 17px;
-	font-weight: 300;
-	line-height: 27px;
+.gallery{
+	background-color: #ffe92f;
 }
 
-.info-header .btn{
+.blog{
+	background-color: #b07cf7;
+}
+
+.contact{
+	background: url(img/contact-background.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.subscribe{
+	background: url(img/subscribe-background.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+/*-----END-OF-SECTIONS-BACKGROUND-----*/
+
+
+
+/*-----BUTTONS-STYLING-----*/
+
+.info-wrapper .btn{
 	background-color:  #ff6033;
 	width: 200px;
 	height: 55px;
@@ -94,12 +159,6 @@
 	border-radius: 0;
 	margin-top: 20px;
 	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
-}
-
-.mouse-icon{
-	position: absolute;
-	left: 50%;
-	bottom: 40px;
 }
 
 .our-services .btn{
@@ -117,8 +176,10 @@
 	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
 	color: #262626;
 	font-weight: 700;
+	background-color: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
 }
-
 .btn-label{
 	display: flex;
 	width: 25%;
@@ -142,39 +203,6 @@
 	margin-bottom: 40px;
 }
 
-.gallery{
-	background-color: #ffe92f;
-}
-
-.gallery h1{
-	color: #262626;
-	font-size: 90px;
-	font-weight: 700;
-}
-
-.row{
-	padding: 0;
-	margin: 0;
-	justify-content: center;
-}
-
-	
-.gallery, .our-services, .blog, .contact, .about-us .container-fluid{
-	padding: 60px;
-}
-
-.gallery .col-8{
-	margin-bottom: 50px;
-}
-.gallery small{
-	font-size: 16px;
-		color: #000000;
-}
-
-.gallery .container-fluid div.row:last-child{
-	padding-top: 30px;
-}
-
 .gallery .btn{
 	background-color:  #5585a2;
 	width: 200px;
@@ -187,53 +215,11 @@
 	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-section.subscribe{
-	background: url(../img/subscribe-background.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-
-.subscribe h1{
-	color: #262626;
-	font-size: 40px;
-}
-.subscribe small{
-	color: #262626;
-	font-size: 17px
-}
-
-.subscribe-row{
-	padding: 100px;
-}
-
-.subscribe input{
-	border-radius: 0;
-	border: 1px solid #262626;
-}
-
 .subscribe .btn{
 	background-color: #96b92c;
 	border-radius: 0;
 	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 	color: #ffffff;
-
-}
-
-.blog{
-	background-color: #b07cf7;
-}
-
-.blog h1{
-	color:  #ffffff;
-	font-size: 90px;
-}
-
-.blog small{
-	color: #ffffff;
-	font-size: 17px;
-	font-weight: 300;
-	text-align: justify;
 }
 
 .blog .btn{
@@ -248,54 +234,94 @@ section.subscribe{
 	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-.contact{
-	background: url(img/contact-background.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+/*-----END-OF-BUTTONS-STYLING-----*/
 	
+
+/*-----TEXT-STYLING-----*/
+
+nav a{
+	font-weight: 700;
+	font-size: 16px;
 }
-.contact h1{
-	color:  #000000;
+
+.info-wrapper h1{
+	font-weight: 800;
 	font-size: 90px;
 }
 
-.contact small{
-	color: #000000;
-	font-size: 17px;
-	font-weight: 300;
-	text-align: justify;
-}
-
-	footer{
-		background-color: #262626;
-		color: #b9b9b9;
-		font-size: 16px;
+	.info-wrapper small{
+		text-shadow: 0px 0px 1px #ffffff;
+		font-size: 17px;
 	}
-footer span{
-	color: red;
-}
-footer p{
-	margin: 0;
-	padding: 0;
-	line-height: 27px;
+
+.about-us h1{
+	font-size: 70px;
+	font-weight: 700;
+	color: #fff;
 }
 
-.contact .form-control{
-	margin: 10px;
-	border-radius: 0;
-	background-color:  rgba(0, 196, 196, 0.3);
-	font-size: 17px;
+	.about-us small{
+		font-size: 16px;
+		color: #ffffff;
+	}
+
+.our-services h1{
+	font-size: 60px;
+	font-weight: 700;
+	position: absolute;
+	color: #fff;
+	white-space: nowrap;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-shadow: 1px 2px 5px #000000;
 }
 
-.form-control::placeholder {
-  color: white;
-  opacity: 1;
+.gallery h1{
+	color: #262626;
+	font-size: 90px;
+	font-weight: 700;
 }
 
-textarea{
-	background-color: grey;
+	.gallery small{
+		font-size: 16px;
+		color: #000000;
+	}
+
+.subscribe h1{
+	color: #262626;
+	font-size: 40px;
 }
+	.subscribe small{
+		color: #262626;
+		font-size: 17px
+	}
+
+.blog h1{
+	color:  #ffffff;
+	font-size: 90px;
+	font-weight: 700;
+}
+
+	.blog small{
+		color: #ffffff;
+		font-size: 17px;
+		font-weight: 300;
+		text-align: justify;
+	}
+
+.contact h1{                        
+	color:  #000000;
+	font-size: 90px;
+	font-weight: 700;
+}
+								
+	.contact small{
+		color: #000000;
+		font-size: 17px;
+		font-weight: 300;
+		text-align: justify;
+	}
 
 .contact p{
 	font-weight: 700;
@@ -305,98 +331,44 @@ textarea{
 }
 
 
+/*-----END-OF-TEXT-STYLING-----*/
 
 
-@media all and (max-width: 992px) {
 
-	.info-header{
-		margin-left: 30px;
-	}
+/*----OVERLINE-FROM-LEFT-EFFECT----*/
 
-	.our-services .btn{
-		width:  100%;
-	}
-
-	.btn-label{
-		width: 30%;
-		
-	}
-	
-	.our-services-wrapper h3{
-		font-size: 50px;
-		
-	}
-	.gallery, .our-services, .about-us .container-fluid{
-	padding: 30px;
+li{
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  position: relative;
+  overflow: hidden;
 }
-	
+li:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  top: 0;
+  background: #ff6033;
+  height: 4px;
+  transition-property: right;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
 }
-
-
-
-@media all and (max-width: 768px) {
-
-	.header {
-		background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(img/background.png);	
-	}
-	
-	.info-header{
-		text-align: center;
-	}
-	.about-us-wrapper{
-		text-align: center;
-		padding-bottom: 20px;
-	}
-
-	.our-services .btn{
-		width:  80%;
-	}
-
-	.our-services-wrapper h3{
-		font-size: 70px;	
-	}
-
-	.btns-wrapper{
-		margin: 10px 0;
-	}
-		
+li:hover:before, li:focus:before, li:active:before {
+  right: 0;
 }
 
-@media all and (max-width: 556px){
-	
-	.header {
-		height: 100vh;
-		background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(img/background.png);
-		background-size: cover;
-		background-position: center;
-	}
+/*----END-OF-OVERLINE-FROM-LEFT-EFFECT----*/
 
 
-	.about-us-wrapper{
-		text-align: center;
-	}
 
-	.info-header p{
-		text-shadow: 0px 0px 1px #ffffff;
-	}
 
-	.our-services .btn{
-		width:  100%;
-	}
 
-	.our-services-wrapper h3{
-		font-size: 55px;
-	}
-
-	.gallery, .our-services, .blog, .contact, .about-us .container-fluid{
-	padding: 0;
-}
-.subscribe-row{
-	padding: 20px;
-}
-
-	
-}
 
 
 
