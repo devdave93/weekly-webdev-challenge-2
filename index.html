@@ -6,20 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
   </head>
   <body>
-    <header class="header">
+    <header id="header">
       <div class="container-fluid">
-        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <nav class="navbar navbar-expand-md navbar-light fixed-top">
           <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav text-center">
-              <li class="nav-item active">
+            <ul class="navbar-nav text-center ">
+              <li class="nav-item  overline-reveal">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
@@ -28,13 +30,13 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Services</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a class="nav-link" href="#">Gallery</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a class="nav-link" href="#">Blog</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
@@ -43,10 +45,10 @@
       </div>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-12 col-sm-8 col-md-4 mr-md-auto info-header">
+          <div class="col-12 col-sm-8 col-md-6 col-lg-5 mr-md-auto info-wrapper">
             <header>
               <h1>Fresh&nbsp;Life</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, nesciunt dolore est sunt ratione cupiditate?</p>
+              <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, nesciunt dolore est sunt ratione cupiditate?</small>
             </header>
             <button class="btn">GET FREE NOW</button>
           </div>
@@ -63,7 +65,7 @@
           <div class="col-12 col-sm-8 col-md-6 about-us-wrapper ">
             <header>
               <h1>About&nbsp;Us</h1>
-              <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis architecto dolore, ullam consectetur fuga fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quos.</small>
+              <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi praesentium delectus, id voluptate eligendi quos animi, non ipsam maiores eos tempora ex alias quod distinctio earum obcaecati sequi iste. Optio magni dolorem ad placeat tempore enim quasi animi reprehenderit omnis!</small>
             </header>
           </div>
         </div>
@@ -73,12 +75,12 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 col-sm-12 col-md-6  btns-wrapper">
-            <button class="btn btn-default btn-1"><span class="txt-btn">Online Shopping</span><span class="btn-label"><img src="img/icon-1.png" alt="" class="img-responsive"></span></button>
-            <button class="btn btn-default btn-2"><span class="txt-btn">Quality Profuct</span><span class="btn-label"><img src="img/icon-2.png" alt="" class="img-responsive"></span></button>
-            <button class="btn btn-default btn-3"><span class="txt-btn">Domestic &amp; intertional Delivery</span><span class="btn-label"><img src="img/icon-3.png" alt="" class="img-fluid"></span> </button>
-            <button class="btn btn-default btn-4"><span class="txt-btn">Well Organized</span><span class="btn-label"><img src="img/icon-4.png" alt="" class="img-fluid"></span></button>
+            <button class="btn"><span class="txt-btn">Online Shopping</span><span class="btn-label"><img src="img/icon-1.png" alt="" class="img-responsive"></span></button>
+            <button class="btn"><span class="txt-btn">Quality Profuct</span><span class="btn-label"><img src="img/icon-2.png" alt="" class="img-responsive"></span></button>
+            <button class="btn"><span class="txt-btn">Domestic &amp; intertional Delivery</span><span class="btn-label"><img src="img/icon-3.png" alt="" class="img-fluid"></span> </button>
+            <button class="btn"><span class="txt-btn">Well Organized</span><span class="btn-label"><img src="img/icon-4.png" alt="" class="img-fluid"></span></button>
           </div>
-          <div class="col-12 col-sm-12 col-md-6 our-services-wrapper">
+          <div class="col-12 col-sm-12 col-md-6 align-self-center our-services-wrapper">
             <h1>Our services</h1>
             
             <img src="img/img2.png" class="img-fluid d-block mx-auto "></img>
@@ -95,28 +97,27 @@
             <h1>Gallery</h1><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem tempore ducimus, reiciendis similique pariatur, impedit cupiditate iste, facilis libero natus odio deleniti. Doloribus impedit praesentium in, blanditiis quam eum cupiditate.</small>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-8 left-column">
+        <div class="row no-gutters">
+          <div class="col-12 col-md-8">
             <img src="img/peach.png" class="img-fluid d-block mx-auto">
           </div>
-          <div class="col-sm-12 col-md-4  d-flex flex-wrap right-column  align-content-between justify-content-between  no-gutters" >
+          <div class="col-12 col-sm-12 col-md-4  d-flex flex-wrap right-column  align-content-between justify-content-md-between  no-gutters" >
             
-              <div class="col-sm-6 col-md-12 ">
+              <div class="col-12 col-sm-6 col-md-12">
                 <img src="img/blackberry.png" class="img-fluid">
               </div>
             
             
-              <div class="col-sm-6 col-md-12  ">
+              <div class=" col-12 col-sm-6 col-md-12  ">
                 <img src="img/whortleberry.png" class="img-fluid">
               </div>
-            
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
+            </div>
+
+        <div class="row no-gutters">
+          <div class="col-12 col-sm-6 col-md-6">
             <img src="img/pomergranate.png" class="img-fluid">
           </div>
-          <div class="col-md-6"><img src="img/water.png" class="img-fluid"></div>
+          <div class="col-12 col-sm-6 col-md-6"><img src="img/water.png" class="img-fluid"></div>
           <button class="btn">VIEW MORE</button>
         </div>
       </div>
@@ -129,11 +130,11 @@
           <h1>Subscribe To Us</h1>
           <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error reiciendis molestias obcaecati quae temporibus odio.</small>
           <form>
-            <div class="form-group row no-gutters justify-content-between mt-md-3">
-              <div class="col-md-10 pr-md-3">
+            <div class="form-group row no-gutters justify-content-between">
+              <div class="col-sm-10 col-md-10 pr-md-3">
                 <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Your email adress ">
               </div>
-              <div class="col-md-2 ">
+              <div class="col-12 col-sm-2 col-md-2 text-center">
                 <button type="submit" class="btn">Subscribe</button>
               </div>
             </div>
@@ -150,15 +151,15 @@
           <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dolores dicta quo ab labore at voluptatem laborum fugit iste sapiente.</small>
         </div>
       </div>
-      <div class="row pt-4 pb-4 text-center">
-        <div class="col-sm col-md-3">
-          <img src="img/blog-img-1.png" class="img-fluid">
+      <div class="row pt-4 pb-4 text-center no-gutters">
+        <div class="col-md-6  col-lg-4 ">
+          <figure><img src="img/blog-img-1.png" class="img-fluid p-1 "></figure>
         </div>
-        <div class="col-md-3">
-          <img src="img/blog-img-2.png" class="img-fluid">
+        <div class="col-md-6 col-lg-4">
+          <img src="img/blog-img-2.png" class="img-fluid p-1 ">
         </div>
-        <div class="col-md-3">
-          <img src="img/blog-img-3.png" class="img-fluid">
+        <div class="col-md-6 col-lg-4">
+          <img src="img/blog-img-3.png" class="img-fluid p-1 ">
         </div>
       </div>
       <div class="row">
@@ -208,10 +209,12 @@
   </div>
 </section>
 <footer>
-  <div class="row text-center">
-    <div class="col-md-4 p-3"><p>2015 Company. All right reserved</p></div>
-    <div class="col-md-4 p-3"><img src="img/logo-small.png"></div>
-    <div class="col-md-4 p-3"><p>Made with <span>love</span> by Dave</p></div>
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="col-auto p-3"><p>2015 Company. All right reserved</p></div>
+      <div class="col-auto p-3"><img src="img/logo-small.png"></div>
+      <div class="col-auto p-3"><p>Made with <span>love</span> by Dave</p></div>
+    </div>
   </div>
 </footer>
 </div>
