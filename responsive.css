@@ -1,14 +1,10 @@
-@media all and (max-width: 1200px) {
 
-	
-
-}
 @media all and (max-width: 992px) {
 
-	.info-wrapper h1{
-		font-size: 80px;
+	.info-header h1{
+		font-size: 70px;
 	}
-	.our-services .btn{
+	.btns-wrapper .btn{
 		width:  100%;
 	}
 
@@ -16,108 +12,91 @@
 		width: 30%;	
 	}
 	
-	.our-services-wrapper h3{
+	.our-services-header h1{
 		font-size: 50px;	
 	}
-	.gallery, .our-services, .blog, .about-us .container-fluid{
-	padding: 30px;
-	}
 
-	.gallery img{
-		padding: 5px;
-	}
-
-	
+	.subscribe-header{
+	padding: 100px 0 100px 100px;	
 }
 
-
+}
 
 @media all and (max-width: 768px) {
-
 	
+	#subscribe{
+		background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),url(img/subscribe-background.png);
+		
+	}
 	#header {
 		background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(img/background.png);	
 	}
 
-	.info-wrapper{
+	.info-header{
 		text-align: center;
 	}
-	.info-wrapper h1{
-		font-size: 80px;
+	.info-header h1{
+		font-size: 60px;
 	}
-	.about-us-wrapper{
+	.about-us-header{
 		text-align: center;
 		padding-bottom: 20px;
 	}
 
-	.our-services .btn{
-		width:  80%;
-
-	}
-
-	.our-services-wrapper h3{
+	.our-services-header h1{
 		font-size: 70px;	
 	}
 
-	.btns-wrapper{
-		margin: 10px 0;
-	}
-
-	.blog .container-fluid{
-		padding: 0;
-	}
-
-
-	.gallery, .our-services, .blog, .contact, .about-us .container-fluid{
-	padding: 0;
-	}
-
-	.gallery .container-fluid div.row:last-child{
-		padding-top: 0;
-	}
-
-	.gallery img{
-		padding: 5px;
+	.blog-imgs img{
 		width: 100%;
 	}
-	
-		
+
+	.gallery-imgs img{
+		width: 100%;
+	}
+
+	.subscribe-header{
+		padding: 60px;
+		text-shadow: 0px 0px 1px #ffffff;
+	}
+
+	.contact-data {
+		background-color: rgba(255,255,255,0.3);
+		text-align: center;
+		border-radius: 10px;
+		margin-bottom: 10px;
+	}
+
+	.caption p{
+		padding: 20px;
+		font-size: 35px;
+	}
+
+	.btns-wrapper{
+		margin: 0;
+	}
+			
 }
 
 @media all and (max-width: 556px){
 	
-	#header {
-		height: 100vh;
-		background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(img/background.png);
-		background-size: cover;
-		background-position: center;
+	.info-header h1{
+		font-size: 50px;
 	}
 
-	.about-us-wrapper{
-		text-align: center;
-	}
-
-	.info-wrapper p{
-		text-shadow: 0px 0px 1px #ffffff;
-	}
-
-	.info-wrapper h1{
-		font-size: 60px;
-	}
-
-	.about-us h1 {
+	.about-us-header h1 {
     	font-size: 60px;
 	}
 
-	.about-us small {
+	.about-us-header small {
     	font-size: 14px;
 	}
 
-	.gallery h1 {
+	.gallery-header h1 {
     	font-size: 60px;
 	}
 
-	.gallery small {
+	.gallery-header small {
     	font-size: 14px;
 	}
 
@@ -125,61 +104,56 @@
 	    font-size: 15px;
 	}
 
-	.our-services .btn{
-		width:  100%;
-
+	.our-services-header h1{
+		font-size: 50px;
 	}
 
-	.our-services-wrapper h3{
-		font-size: 55px;
-	}
-
-	.gallery, .our-services, .blog, .contact, .about-us .container-fluid{
-	padding: 0;
-	}
-
-	.subscribe-row{
+	.subscribe-section{
 		padding: 20px;
-	}
-
-	.gallery img{
-		width: 100%;
 	}
 
 	.btn{
 		margin: 10px;
 	}
 
-	.subscribe .row{
-		text-align: center;
-	}
-
+	
 	.btn-label{
 		height: 80px;
 	}
 
-	.blog h1 {
+	.blog-header h1 {
     	font-size: 60px;  
 	}
 
-	.blog small {
+	.blog-header small {
     	font-size: 14px;  
 	}
 
-	.subscribe small {
+	.subscribe-header small {
 	    font-size: 14px;
 	}
 
-	.contact h1 {
+	.contact-header h1 {
 	    font-size: 60px;  
 	}
 	
-	.contact small {
+	.contact-header small {
 	    font-size: 14px;  
 	}
 
-	.gallery, .our-services, .blog, .contact .container-fluid{
-	padding-top: 20px;
-}
+	#gallery, #our-services, #blog, #contact .container{
+		padding-top: 20px;
+	}
+
+	.subscribe-header{
+		padding: 40px;
+		text-align: center;
+	}
+
+	.caption p{
+		padding: 15px;
+		font-size: 20px;
+	}
 
 }
+
