@@ -1,159 +1,393 @@
-
-@media all and (max-width: 992px) {
-
-	.info-header h1{
-		font-size: 70px;
-	}
-	.btns-wrapper .btn{
-		width:  100%;
-	}
-
-	.btn-label{
-		width: 30%;	
-	}
-	
-	.our-services-header h1{
-		font-size: 50px;	
-	}
-
-	.subscribe-header{
-	padding: 100px 0 100px 100px;	
+/*-----GLOBAL-----*/
+*{
+	font-family: 'Raleway', sans-serif;
 }
 
+.info-header{
+	margin-top: 200px;
 }
 
-@media all and (max-width: 768px) {
-	
-	#subscribe{
-		background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),url(img/subscribe-background.png);
-		
-	}
-	#header {
-		background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(img/background.png);	
-	}
-
-	.info-header{
-		text-align: center;
-	}
-	.info-header h1{
-		font-size: 60px;
-	}
-	.about-us-header{
-		text-align: center;
-		padding-bottom: 20px;
-	}
-
-	.our-services-header h1{
-		font-size: 70px;	
-	}
-
-	.blog-imgs img{
-		width: 100%;
-	}
-
-	.gallery-imgs img{
-		width: 100%;
-	}
-
-	.subscribe-header{
-		padding: 60px;
-		text-shadow: 0px 0px 1px #ffffff;
-	}
-
-	.contact-data {
-		background-color: rgba(255,255,255,0.3);
-		text-align: center;
-		border-radius: 10px;
-		margin-bottom: 10px;
-	}
-
-	.caption p{
-		padding: 20px;
-		font-size: 35px;
-	}
-
-	.btns-wrapper{
-		margin: 0;
-	}
-			
+.row{
+	padding: 0;
+	margin: 0;
+	justify-content: center;
 }
 
-@media all and (max-width: 556px){
-	
-	.info-header h1{
-		font-size: 50px;
+.subscribe-header{
+	padding: 100px;
+}
+
+.gallery-imgs img{
+		padding: 5px;
+}
+
+.contact-header, .blog-header, .gallery-header{
+	margin-top: 30px;
+}
+
+/*-----NAVIGATION-----*/
+.navbar{
+	background-color: #ffffff;
+}
+
+/*-----SECTIONS'-HEADERS-STYLING-----*/
+
+nav a{
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.info-header h1{
+	font-weight: 800;
+	font-size: 90px;
+}
+
+	.info-header small{
+		font-size: 17px;
 	}
 
-	.about-us-header h1 {
-    	font-size: 60px;
+.about-us-header h1{
+	font-size: 70px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+	.about-us-header small{
+		font-size: 16px;
+		color: #ffffff;
 	}
 
-	.about-us-header small {
-    	font-size: 14px;
+.our-services-header h1{
+	font-size: 70px;
+	font-weight: 700;
+	position: absolute;
+	color: #fff;
+	white-space: nowrap;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-shadow: 1px 2px 5px #000000;
+}
+
+.gallery-header h1{
+	color: #262626;
+	font-size: 90px;
+	font-weight: 700;
+}
+
+	.gallery-header small{
+		font-size: 16px;
+		color: #000000;
 	}
 
-	.gallery-header h1 {
-    	font-size: 60px;
+.subscribe-header h1{
+	color: #262626;
+	font-size: 40px;
+}
+	.subscribe-header small{
+		color: #262626;
+		font-size: 17px
 	}
 
-	.gallery-header small {
-    	font-size: 14px;
+.blog-header h1{
+	color:  #ffffff;
+	font-size: 90px;
+	font-weight: 700;
+}
+
+	.blog-header small{
+		color: #ffffff;
+		font-size: 17px;
+		font-weight: 300;
+		text-align: justify;
 	}
 
-	.txt-btn {
-	    font-size: 15px;
+.contact-header h1{                        
+	color:  #000000;
+	font-size: 90px;
+	font-weight: 700;
+}
+								
+	.contact-header small{
+		color: #000000;
+		font-size: 17px;
+		font-weight: 300;
+		text-align: justify;
 	}
 
-	.our-services-header h1{
-		font-size: 50px;
-	}
+.contact-data p{
+	font-weight: 700;
+	padding: 0;
+	margin: 0;
+	font-size: 17px;
+}
 
-	.subscribe-section{
-		padding: 20px;
-	}
+.about-us-header{
+	text-align: left;
+	padding-bottom: 20px;
+	align-self: center;
+}
 
-	.btn{
-		margin: 10px;
-	}
+/*-----MOUSE-ICON-----*/
+.mouse-icon{
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	transform: translateX(-50%);
+}
 
-	
-	.btn-label{
-		height: 80px;
-	}
+.scroll{
+	position: absolute;
+	left: 50%;
+	/*transform: translateX(-50%);*/
+	bottom: 60px;
+	transition: 1s ease;
+}
+@keyframes scroll{
+	0%{transform: translate(-50%,-3px);}
+	50%{transform: translate(-50%,5px)}
+	100%{transform: translate(-50%,10px)}
+}
 
-	.blog-header h1 {
-    	font-size: 60px;  
-	}
-
-	.blog-header small {
-    	font-size: 14px;  
-	}
-
-	.subscribe-header small {
-	    font-size: 14px;
-	}
-
-	.contact-header h1 {
-	    font-size: 60px;  
-	}
-	
-	.contact-header small {
-	    font-size: 14px;  
-	}
-
-	#gallery, #our-services, #blog, #contact .container{
-		padding-top: 20px;
-	}
-
-	.subscribe-header{
-		padding: 40px;
-		text-align: center;
-	}
-
-	.caption p{
-		padding: 15px;
-		font-size: 20px;
-	}
+.scroll:hover{
 
 }
+
+.scroll-animation{
+	animation: scroll 2s infinite linear;
+}
+
+/*----------FORM-STYLING---------*/
+
+.form-wrapper .form-control{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 0;
+	background-color:  rgba(0, 196, 196, 0.3);
+	font-size: 17px;
+}
+
+.subscribe-header input{
+	border-radius: 0;
+	border: 1px solid #262626;
+}
+
+/*----------FOOTER-STYLING---------*/
+
+footer{
+	background-color: #262626;
+	color: #b9b9b9;
+	font-size: 16px;
+}
+footer span{
+	color: red;
+}
+
+footer p{
+	margin: 0;
+	padding: 0px;
+	line-height: 27px;
+	white-space: nowrap;
+}
+
+/*----------SECTIONS'-BACKGROUND----------*/
+
+#header {
+	height: 100vh;
+	background-image: url(img/background.png);
+	background-size: cover;
+	background-position: center;
+}
+
+#about-us{
+	background-color:  #00c4c4;
+}
+
+#our-services{
+	background-color:  #70bfff;;
+}
+
+#gallery{
+	background-color: #ffe92f;
+}
+
+#blog{
+	background-color: #b07cf7;
+}
+
+#subscribe{
+	background: url(img/subscribe-background.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#contact{
+	background: url(img/contact-background.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+/*----------BUTTONS-STYLING----------*/
+
+.info-btn{
+	background-color:  #ff6033;
+	width: 200px;
+	height: 55px;
+	color: #fff;
+	font-weight: 300;
+	font-size: 16px;
+	border-radius: 0;
+	margin-top: 20px;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btns-wrapper .btn{
+	font-size: 20px;
+	white-space: normal;
+	width:  80%;
+	display: flex;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+	color: #262626;
+	font-weight: 700;
+	background-color: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
+}
+.btn-label{
+	display: flex;
+	width: 25%;
+	height: 100px;
+	align-items: center;
+	justify-content: center;
+	border-left: 1px solid #929292;
+	border-radius: 0;
+}
+
+.txt-btn{
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.btns-wrapper{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.gallery-btn{
+	background-color:  #5585a2;
+	width: 200px;
+	height: 45px;
+	color: #fff;
+	font-weight: 300;
+	font-size: 16px;
+	border-radius: 0;
+	margin: 30px;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.subscribe-btn{
+	background-color: #96b92c;
+	border-radius: 0;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+	color: #ffffff;
+}
+
+.blog-btn{
+	background-color:  #f72b3b;
+	width: 200px;
+	height: 45px;
+	color: #fff;
+	font-weight: 300;
+	font-size: 16px;
+	border-radius: 0;
+	margin-bottom: 50px;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+/*----------ELEMENTS-ON-IMGS----------*/
+
+figure {
+	position: relative;
+	margin: 10px;
+}
+
+.data{
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background-color: rgba(0,0,0,0.3);
+	border-radius: 4px;
+	z-index: 1;
+	left: 15px;
+	top: 15px;
+	color: white;
+	font-size: 24px;
+	font-weight: 800;
+	white-space: normal;
+	line-height: 115%;
+	text-transform: uppercase;
+}
+
+figcaption .caption{
+	position: absolute;
+	bottom: 0;
+	color: #ffffff;
+	font-size: 20px;
+}
+
+.caption p{
+	margin: 0;
+	background-color: rgba(0,0,0, 0.4);
+}
+/*----------IMGS----------*/
+
+.blog-imgs img{
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/*----------HIDE-CONTENT----------*/
+.card{
+	background-color: transparent;
+	border: none;
+}
+
+/*----OVERLINE-FROM-LEFT-EFFECT----*/
+
+li a{
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  position: relative;
+  overflow: hidden;
+}
+li a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #ff6033;
+  height: 4px;
+}
+li a:hover:before, li a:focus:before, li a:active:before {
+  right: 0;
+}
+
+
+
+
 
