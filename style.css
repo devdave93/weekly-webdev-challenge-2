@@ -230,9 +230,7 @@ footer p{
 }
 
 /*----------BUTTONS-STYLING----------*/
-button:hover{
-	cursor: pointer;
-}
+
 	
 .info-btn{
 	background-color:  #ff6033;
