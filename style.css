@@ -194,7 +194,7 @@ footer p{
 
 #header {
 	height: 100vh;
-	background-image: url(img/background.png);
+	background-image: url(img/background-min.png);
 	background-size: cover;
 	background-position: center;
 }
@@ -216,14 +216,14 @@ footer p{
 }
 
 #subscribe{
-	background: url(img/subscribe-background.png);
+	background: url(img/subscribe-background-min.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 
 #contact{
-	background: url(img/contact-background.png);
+	background: url(img/contact-background-min.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
