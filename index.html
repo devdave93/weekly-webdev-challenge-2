@@ -128,9 +128,7 @@
                       </div>
                     </div>
                   </div>
-                  <button class="btn gallery-btn" type="button" data-toggle="collapse" data-target="#ukryta-tresc" aria-expanded="false" aria-controls="ukryta-tresc">
-                  VIEW MORE
-                  </button>
+                  <button id='btn' class="btn gallery-btn" type="button" data-toggle="collapse" data-target="#ukryta-tresc" aria-expanded="false" aria-controls="ukryta-tresc">VIEW MORE</button>
                 </div>
               </div>
               </div><!-- END OF CONTAINER -->
@@ -274,6 +272,18 @@
             });
             
             });
+              var but = document.getElementById('btn');
+
+
+                but.onclick = function() {
+
+                  if(but.innerHTML=='VIEW MORE'){
+                  but.innerHTML = 'VIEW LESS';
+                  } else {
+                    but.innerHTML = 'VIEW MORE';
+                  }
+                }
+
             </script>
 
           </body>
