@@ -21,22 +21,22 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav text-center">
               <li class="nav-item  overline-reveal">
-                <a class="nav-link" href="#header" data-toggle="collapse" data-target=".navbar-collapse">Home<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#header">Home<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about-us" data-toggle="collapse" data-target=".navbar-collapse">About</a>
+                <a class="nav-link" href="#about-us">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#our-services" data-toggle="collapse" data-target=".navbar-collapse">Services</a>
+                <a class="nav-link" href="#our-services">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#gallery" data-toggle="collapse" data-target=".navbar-collapse">Gallery</a>
+                <a class="nav-link" href="#gallery">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#blog" data-toggle="collapse" data-target=".navbar-collapse">Blog</a>
+                <a class="nav-link" href="#blog">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact" data-toggle="collapse" data-target=".navbar-collapse">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -270,8 +270,11 @@
             }, 1000);
             }
             });
-            
             });
+               $(document).on('click',function(){
+              $('.collapse').collapse('hide');
+              })
+              
               var but = document.getElementById('btn');
 
 
@@ -283,6 +286,9 @@
                     but.innerText = 'VIEW MORE';
                   }
                 }
+                
+              
+            
 
             </script>
 
