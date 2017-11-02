@@ -275,17 +275,11 @@
               $('.collapse').collapse('hide');
               })
               
-              var but = document.getElementById('btn');
+             
 
 
-                but.onclick = function() {
-
-                  if(but.innerText=='VIEW MORE'){
-                  but.innerText = 'VIEW LESS';
-                  } else {
-                    but.innerText = 'VIEW MORE';
-                  }
-                }
+            var button = document.getElementById('btn');
+            button.onclick = function() {(button.innerText=='VIEW MORE') ? button.innerText = 'VIEW LESS': button.innerText = 'VIEW MORE';}
                 
               
             
