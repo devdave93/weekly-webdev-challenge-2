@@ -275,11 +275,19 @@
               $('.collapse').collapse('hide');
               })
               
-             
+             let button = document.getElementById('btn')
+             let hidden_content = document.getElementById('ukryta-tresc')
+
+             button.addEventListener('click', () => {
+
+             hidden_content.classList.contains("show") 
+             ? button.innerText = 'view more'.toUpperCase()
+             : button.innerText = 'view less'.toUpperCase()
+
+             })
 
 
-            var button = document.getElementById('btn');
-            button.onclick = function() {(button.innerText=='VIEW MORE') ? button.innerText = 'VIEW LESS': button.innerText = 'VIEW MORE';}
+           
                 
               
             
