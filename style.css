@@ -30,6 +30,12 @@
 	background-color: #ffffff;
 }
 
+.small-navbar{
+	background-color: #fff;
+	animation-name: navbar-bgcolor-change;
+    animation-duration: 1s;
+}
+
 /*-----SECTIONS'-HEADERS-STYLING-----*/
 
 nav a{
@@ -128,7 +134,7 @@ nav a{
 	align-self: center;
 }
 
-/*-----MOUSE-ICON-----*/
+/*-----MOUSE-ICON-AND-NAVBAR-ANIMATIONS----*/
 .mouse-icon{
 	position: absolute;
 	left: 50%;
@@ -155,6 +161,11 @@ nav a{
 
 .scroll-animation{
 	animation: scroll 2s infinite linear;
+}
+
+@keyframes navbar-bgcolor-change {
+    from {background-color: transparent;}
+    to {background-color: white;}
 }
 
 /*----------FORM-STYLING---------*/
