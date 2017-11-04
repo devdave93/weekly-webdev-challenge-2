@@ -12,7 +12,7 @@
   </head>
   <body>
     <header id="header">
-      <nav class="navbar navbar-expand-md navbar-light fixed-top">
+      <nav id='nav' class="navbar navbar-expand-md navbar-light fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#"><img src="img/logo-min.png"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -284,7 +284,18 @@
              ? button.innerText = 'view more'.toUpperCase()
              : button.innerText = 'view less'.toUpperCase()
 
-             })
+             });
+              
+               window.addEventListener('scroll', function() {
+                 var window_y_position = window.pageYOffset; 
+
+                if (window_y_position > 50){
+                  document.getElementById('nav').classList.add('small');
+                }
+                else {
+                  document.getElementById('nav').classList.remove('small');
+                }
+              });
 
 
            
