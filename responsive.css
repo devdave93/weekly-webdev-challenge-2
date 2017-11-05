@@ -78,9 +78,9 @@
 	.btns-wrapper{
 		margin: 0;
 	}
-	navbar-collapse{
-		background-color: #fff;
-	}
+			.navbar-nav{
+	background-color: #fff;
+}
 			
 }
 
