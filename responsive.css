@@ -78,10 +78,19 @@
 	.btns-wrapper{
 		margin: 0;
 	}
-			.navbar-nav{
+			.navbar{
 	background-color: #fff;
 }
 			
+}
+@media all and (min-width: 769px) {
+	.small-nav{
+	background-color: #fff;
+	animation-name: nav-bgcolor-change;
+    animation-duration: 1s;
+}
+
+	
 }
 
 @media all and (max-width: 556px){
